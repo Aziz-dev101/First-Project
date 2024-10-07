@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1C1C1C; /* Dark grey */
+    color: #FFFFFF; /* White */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background-color: #333333; /* Darker grey */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #ff4768; /* Slightly lighter pink-red for "Register" heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #ff6d86; /* Light pink-red for labels */
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #ff214f; /* Red */
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff214f; /* Bright red-pink for button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #e01d47; /* Slightly darker variation for hover */
+}
+
+/* New Style for "Already have an account?" text */
+.account-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFFFFF; /* Light pink-red */
+}
+
+.account-text a.login-link {
+    color: #ff214f; /* Main red color for link */
+    text-decoration: none;
+}
+
+.account-text a.login-link:hover {
+    text-decoration: underline;
+}
+
+p.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+p.error {
+    color: red;
+    margin-bottom: 10px;
+}
